@@ -4,7 +4,8 @@
   "description": "This is an assignment for npm run scripts as a task runner",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/landonconover/npmRunScripts/issues"
   },
-  "homepage": "https://github.com/landonconover/npmRunScripts#readme"
+  "homepage": "https://github.com/landonconover/npmRunScripts#readme",
+  "devDependencies": {
+    "html-minifier": "^1.1.1"
+  }
 }
