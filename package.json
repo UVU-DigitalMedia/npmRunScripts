@@ -1,0 +1,19 @@
+{
+  "name": "npmrunscripts",
+  "version": "1.0.0",
+  "description": "This is an assignment for npm run scripts as a task runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landonconover/npmRunScripts.git"
+  },
+  "author": "Landon Conover <landon.conover@gmail.com> (https://github.com/landonconover)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landonconover/npmRunScripts/issues"
+  },
+  "homepage": "https://github.com/landonconover/npmRunScripts#readme"
+}
