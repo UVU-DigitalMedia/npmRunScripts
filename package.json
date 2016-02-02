@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
-    "css": "stylus --include ./node_modules --include-css --compress ./src/css/main.styl -o ./dist/css/style.css"
+    "css": "stylus --include ./node_modules --include-css --compress ./src/css/main.styl -o ./dist/css/style.css",
+    "js": "browserify ./src/js/main.js | uglifyjs > ./dist/js/bundle.js",
+    "fonts": "fontify"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,14 @@
   },
   "homepage": "https://github.com/landonconover/npmRunScripts#readme",
   "devDependencies": {
+    "browserify": "^13.0.0",
+    "fontify": "0.0.2",
     "html-minifier": "^1.1.1",
-    "stylus": "^0.53.0"
+    "stylus": "^0.53.0",
+    "uglify-js": "^2.6.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.0"
   }
 }
