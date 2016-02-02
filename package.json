@@ -14,7 +14,6 @@
     "watch-css": "nodemon --ext styl --watch ./src/css --exec 'npm run css'",
     "watch-js": "nodemon --ext js --watch ./src/js --exec 'npm run js'",
     "watch": "npm run watch-html & npm run watch-css & npm run watch-js",
-
     "server": "npm run watch & live-server --port=3000 ./dist"
   },
   "repository": {
@@ -37,6 +36,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "holderjs": "^2.9.1",
     "jquery": "^2.2.0"
   }
 }
