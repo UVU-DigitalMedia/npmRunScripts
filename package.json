@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html"
+    "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
+    "css": "stylus --include ./node_modules --include-css --compress ./src/css/main.styl -o ./dist/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/landonconover/npmRunScripts#readme",
   "devDependencies": {
-    "html-minifier": "^1.1.1"
+    "html-minifier": "^1.1.1",
+    "stylus": "^0.53.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6"
   }
 }
