@@ -8,7 +8,14 @@
     "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
     "css": "stylus --include ./node_modules --include-css --compress ./src/css/main.styl -o ./dist/css/style.css",
     "js": "browserify ./src/js/main.js | uglifyjs > ./dist/js/bundle.js",
-    "fonts": "fontify"
+    "fonts": "fontify",
+    "build": "npm run html & npm run css & npm run js & npm run fonts",
+    "watch-html": "nodemon --ext html --watch ./src/ --exec 'npm run html'",
+    "watch-css": "nodemon --ext styl --watch ./src/css --exec 'npm run css'",
+    "watch-js": "nodemon --ext js --watch ./src/js --exec 'npm run js'",
+    "watch": "npm run watch-html & npm run watch-css & npm run watch-js",
+
+    "server": "npm run watch & live-server --port=3000 ./dist"
   },
   "repository": {
     "type": "git",
@@ -24,6 +31,7 @@
     "browserify": "^13.0.0",
     "fontify": "0.0.2",
     "html-minifier": "^1.1.1",
+    "live-server": "^0.9.1",
     "stylus": "^0.53.0",
     "uglify-js": "^2.6.1"
   },
