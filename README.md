@@ -17,12 +17,12 @@ For example:
 
 This command will run the watch command and spinup a live server for testing.
 
-To complete this assignment add one useful tast to the npm run scripts.
+To complete this assignment add one useful task to the npm run scripts.
 
 
 #Tips
 - As always, ````npm install```` :stuck_out_tongue:
-- This assinment has no tests
+- This assignment has no tests
 - When you ````npm install (package)```` be sure to add the --save-dev flag. When you run the script, npm will first look there for the npm package. Then it will look for a global (computer wide) install. This way if you have a a dev dependendncy that only one package needs you don't need to install the package global, and all of your users don't have too.
 - You can combine tasks too. See the package.json for examples.
 - Some ideas for tasks: Image optimizer, js scripts ugllfiy and minify WITHOUT Browserify, css task without Stylus, Replace Stylus with Sass or Less, add Bable for ES6 goodness, add a templating language, like Handlebars,  add a task to convert .md files to HTML, add a testing framework like mocha or qunit. There are LOTS more!
