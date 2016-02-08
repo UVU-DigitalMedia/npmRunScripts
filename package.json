@@ -14,7 +14,9 @@
     "watch-css": "nodemon --ext styl --watch ./src/css --exec 'npm run css'",
     "watch-js": "nodemon --ext js --watch ./src/js --exec 'npm run js'",
     "watch": "npm run watch-html & npm run watch-css & npm run watch-js",
-    "server": "npm run watch & live-server --port=3000 ./dist"
+    "server": "npm run watch & live-server --port=3000 ./dist",
+    "info": "echo 'npm as a build tool'",
+    "lint": "echo '=> linting' && jshint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "browserify": "^13.0.0",
     "fontify": "0.0.2",
     "html-minifier": "^1.1.1",
+    "jshint": "^2.9.1",
     "live-server": "^0.9.1",
     "stylus": "^0.53.0",
     "uglify-js": "^2.6.1"
